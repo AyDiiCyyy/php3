@@ -53,7 +53,7 @@
                 @foreach ($relatedProducts as $relate)
                 <a href="{{ route('productDetail', $relate->id) }}">
                     <div class="related-product">
-                        <img src="{{ $relate->image }}" alt="Related Product">
+                        <img src="{{asset('storage')}}/{{ $relate->image }}" alt="Related Product">
                         <p>{{ $relate->name }}</p>
                         <p>{{ $relate->price }}$</p>
                     </div>
